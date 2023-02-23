@@ -191,7 +191,7 @@ def add_new_post():
     return render_template("make-post.html", form=form, loggedin=current_user.is_authenticated, current_user=current_user)
 
 
-@app.route("/edit-post/<int:post_id>")
+@app.route("/edit-post/<int:post_id>", methods=['GET', 'POST'])
 @login_required
 def edit_post(post_id):
     post = BlogPost.query.get(post_id)
