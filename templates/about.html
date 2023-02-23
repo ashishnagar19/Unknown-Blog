@@ -1,0 +1,31 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static', filename='img/about-bg.jpg')}})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Me</h1>
+            <span class="subheading">This is what I do.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Hii, My name is Ashish and i am a python and a web developer. I am currently pursuing Data Science to follow my passion in AI.</p>
+        <p> Currently, I am developing beautiful websites using Html, Css, bootstrap, pre-made templates and Python. Working on the server side through flask framework. Also knows development in python having knowledge of different libraries and frameworks.</p>
+        <p>A passionate learner and a sports geek. Trying to learn about new technologies.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  {% include "footer.html" %}
